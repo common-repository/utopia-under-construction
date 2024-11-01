@@ -1,0 +1,80 @@
+/*
+
+	Utopia Under Construction 1.0
+	Moskva Yigit [krasotaiskusstva.com]
+	GNU General Public License version 3.0
+	http://www.gnu.org/licenses/gpl-3.0.html
+	
+*/
+
+@charset "utf-8";
+
+/*----------------------------
+	.-- Imports
+-----------------------------*/
+
+	@import url(https://fonts.googleapis.com/css?family=Asap);
+
+
+/*----------------------------
+	.-- General
+-----------------------------*/
+	
+	*{margin:0px;padding:0px;}
+	html, body, div, h1, h2, h3, ul, ol, li, dt, p, table, th, td ,img{margin:0;padding:0;border:none;}
+	body{font:16px/21px AsapRegular, Helvetica, Arial, sans-serif;font-weight:normal;font-style:normal;}
+	body{background:#aedfe5 url(../_images/sky.png) repeat-x;height:100%;}
+	h2{font:15px/28px AsapRegular, Candara, Arial, sans-serif;font-weight:500;color:#252525;height:24px;border-bottom:1px solid #333;margin-bottom:5px;}
+	
+/*----------------------------
+	.-- Styles
+-----------------------------*/
+	
+	.ki, a.ki{color:#fff;}
+	
+	#container{position:relative;width:100%;height:100%;}
+	footer{margin:60px auto auto;width:100%;height:100%;text-align:center;}
+	.text-area{width:100%;margin:40px auto;color:#fff;position:relative;display:block;}
+    #stage{top:0px;left:0px;z-index:100;}
+    .stage{position:absolute;top:0;left:0;width:100%;min-height:478px;overflow:hidden;}
+    #clouds{background:transparent url(../_images/cloud.png) 305px 102px repeat-x;}
+	#land{margin:auto;width:250px;height:200px;margin-top:-50px;z-index:100;position:relative;background:url(../_images/land.png) 0 0 no-repeat;}
+	#me{margin:auto;width:250px;height:182px;margin-top:140px;background:url(../_images/me.png) 0 0 no-repeat;position:relative;z-index:101;}
+	#defaultCountdown{max-width:100%;padding:0 10px;height:100%;display:block;margin:auto auto;}
+
+/*----------------------------
+	.-- jQuery Countdown
+-----------------------------*/
+
+	.countdown_rtl{direction:rtl;}
+	.countdown_holding span{background-color:#cccccc;}
+	.countdown_row{width:100%;height:100%;display:block;text-align:center;}
+	.countdown_row:after{content: "";display:table;clear:both;}
+	.countdown_show1 .countdown_section{width:100%;padding-bottom:10px;color:#252525;text-shadow:0px 1px 1px #fafafa;}
+	.countdown_show2 .countdown_section{float:left;width:50%;padding-bottom:10px;color:#252525;text-shadow:0px 1px 1px #fafafa;}
+	.countdown_show3 .countdown_section{float:left;width:33.3%;padding-bottom:10px;color:#252525;text-shadow:0px 1px 1px #fafafa;}
+	.countdown_show4 .countdown_section{float:left;width:24%;padding-bottom:10px;color:#252525;text-shadow:0px 1px 1px #fafafa;}
+	.countdown_show5 .countdown_section{float:left;width:20%;padding-bottom:10px;color:#252525;text-shadow:0px 1px 1px #fafafa;}
+	.countdown_show6 .countdown_section{width:16.25%;padding-bottom:10px;color:#252525;text-shadow:0px 1px 1px #fafafa;}
+	.countdown_show7 .countdown_section{width:14%;padding-bottom:10px;color:#252525;text-shadow:0px 1px 1px #fafafa;}
+	.countdown_section{display:block;margin:auto 2px;font-size:75%;text-align:center;}
+	.countdown_amount{font-size:400%;display:block;color:#333;background:rgba(255,255,255,.3);border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;width:100%;height:62px;padding-top:20px;margin-bottom:-38px;}
+	.countdown_descr{display:block;width:100%;}
+	.countdown_section .clear{height:10px;}
+	
+/*----------------------------
+	.-- Responsive
+-----------------------------*/
+
+@media screen and (max-width:600px){
+	
+.countdown_show1 .countdown_section, .countdown_show2 .countdown_section, .countdown_show3 .countdown_section, .countdown_show4 .countdown_section{width:100%;margin:auto;}
+
+}
+
+@media screen and (min-width:1080px){
+	
+	footer{max-width:600px;}
+
+}
+
